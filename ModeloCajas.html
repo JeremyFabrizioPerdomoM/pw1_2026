@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fiesta de cajas</title>
+    <link rel="stylesheet" href="modelocajas/modelocaja.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <script>
+        document.addEventListener("DOMContentLoaded", ()=>{
+            const hb = document.querySelector(".hamburguer-buttons");
+            const nv = document.querySelector("header nav");
+                hb.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    nv.classList.toggle("hidden");
+                });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <img src="https://placehold.co/48x48" alt="Logo del sitio">
+            <h1>Jeremy Web</h1>
+            <div class="hamburguer-buttons">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <nav class="hidden">
+            <ul>
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#planes">Planes</a></li>
+                <li><a href="#beneficios">Beneficios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="hero">
+            <div>
+                <picture>
+                    <source srcset="https://picsum.photos/id/1048/1300/720" media="(min-width:1025px)">
+                    <source srcset="https://picsum.photos/id/1048/1025/720" media="(min-width:720px)">
+                    <img src="https://picsum.photos/id/1048/320/720" alt="Panel principal del sitio">
+                </picture>
+            </div>
+            <div class="action-panel q2">
+                <h2>Diseñamos tu presencia digital</h2>
+                <p>
+                    Creamos páginas modernas, rápidas y funcionales para emprendedores,
+                    negocios y empresas.
+                </p>
+                <a href="#planes" class="btn-action">Ver Planes</a>
+            </div>
+        </section>
+        <section class="pricing-section conteiner" id="planes">
+            <h2>Nuestros Planes</h2>
+            <div class="grid">
+                <div class="row">
+                    <div class="col-12 col-m-6 col-l-4">
+                        <article class="price-card">
+                            <img src="https://placehold.co/300x220" alt="Plan básico">
+                            <div class="card-body">
+                                <h3>Plan Básico</h3>
+                                <p>
+                                    Ideal para pequeños emprendimientos que necesitan una
+                                    página informativa sencilla.
+                                </p>
+                                <h4>$49</h4>
+                                <a href="#contacto" class="card-btn">Seleccionar</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-m-6 col-l-4">
+                        <article class="price-card">
+                            <img src="https://placehold.co/300x220" alt="Plan profesional">
+                            <div class="card-body">
+                                <h3>Plan Profesional</h3>
+                                <p>
+                                    Perfecto para negocios que desean una imagen más sólida
+                                    y mejores funciones.
+                                </p>
+                                <h4>$99</h4>
+                                <a href="#contacto" class="card-btn">Seleccionar</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-m-12 col-l-4">
+                        <article class="price-card">
+                            <img src="https://placehold.co/300x220" alt="Plan empresarial">
+                            <div class="card-body">
+                                <h3>Plan Empresarial</h3>
+                                <p>
+                                    Solución completa para empresas que necesitan mayor
+                                    alcance, soporte y personalización.
+                                </p>
+                                <h4>$199</h4>
+                                <a href="#contacto" class="card-btn">Seleccionar</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="conteiner info-section" id="beneficios">
+            <h2>Beneficios del Servicio</h2>
+            <p>
+                Ofrecemos un diseño muy adaptable, con buen rendimiento, una buena organización visual clara
+                y una estructura moderna para que tu sitio sea atractivo en computadoras,
+                tabletas y teléfonos celulares.
+            </p>
+        </section>
+    </main>
+    <footer id="contacto">
+        <section>
+            2026 Jeremy Web | Todos los derechos reservados &copy;
+        </section>
+    </footer>
+</body>
+</html>

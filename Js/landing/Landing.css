@@ -1,0 +1,100 @@
+:root{
+    font-size: 16px;
+    font-size: 100%;
+    font-size: 1rem;
+}
+*{
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    display: flex;
+    min-width: 100%;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+header{
+    background-color: #000;
+    color: white;
+}
+main{
+    flex: 1;
+}
+footer{
+    background-color: #000;
+    color: white;
+}
+.carousel{
+    position: relative;
+    width: 100vw;
+    height: 60vh;
+    overflow: hidden;
+}
+.carousel .track{
+    display: flex;
+    position: absolute;
+    width: auto;
+    height: 60vh;
+    top: 0px;
+    left: 0vh;
+    transition: left 0.7s ease-in-out;
+}
+.carousel .track .slide{
+    flex: 0;
+    width: 100vw;
+    height: 60vh;
+    position: relative;
+}
+.carousel .track .slide .image{
+    width: 100vw;
+    height: 60vh;
+}
+.carousel .track .slide .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+}
+.carousel .track .slide .action{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 3px 3px #333;
+}
+
+.carousel .carousel-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 4rem;
+    width: 2rem;
+    background-color: #333;
+    color: white;
+    border: none;
+}
+.carousel .carousel-btn.btnright{
+    right: 0px;
+}
+.carousel .carousel-btn.btnleft{
+    left: 0px;
+}
+
+.error{
+    border-color: red;
+    outline-color: red;
+}
+
+.error-text{
+    font-weight: bold;
+    color: rgb(152, 2, 2);
+    font-size: 0.75rem;
+}

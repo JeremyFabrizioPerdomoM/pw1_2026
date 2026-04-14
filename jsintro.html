@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Introducción a Javascript
+        </title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Intro a Javascript</h1>
+        <Button name="btn_inline" onclick="alert('Click Inline');">
+           Click en Javascript Inline 
+        </Button>
+        <hr>
+        <Button id="btn_script_block">
+           Click en Javascript Inline 
+        </Button>
+        <script>
+            document.addEventListener("DOMContentLoader", page_load);
+            document.addEventListener("DOMContentLoader", page_load2);
+
+            function page_load(){
+                let btn=document.getElementById("btn_script_block");
+                btn.addEventListener("click", (e)=>{
+                    e.preventDefault();
+                    e.stopPropagation();
+                    alert("Click From Block");
+                });
+            }
+            function page_load2(){
+                console.log("Loadder 2 Ejecutado");
+            }
+        </script>
+    </body>
+</html>

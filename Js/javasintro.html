@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>
+            Landing page producto XYZ
+        </title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="landing/Landing.css">
+        <script src="landing/Landing.js"></script>
+        <script src="landing/validador.js"></script>
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>Landing page producto XYZ</h1>
+            </div>
+            <nav>
+
+            </nav>
+        </header>
+        <main>
+            <section class="carousel" id="carouselPrincipal">
+                <div class="track">
+                    <div class="slide">
+                        <div class="image">
+                            <picture>
+                                <source srcset="https://picsum.photos/id/140/1300/720" media="(min-width:1025px)">
+                                <source srcset="https://picsum.photos/id/140/1024/640" media="(min-width:720px)">
+                                <img src="https://picsum.photos/id/140/480/480" alt="Slide 1 Image" />
+                            </picture>
+                        </div>
+                        <div class="action">
+                            <h2>Slide 1</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur minus repellat placeat veritatis blanditiis rem?</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="image">
+                            <picture>
+                                <source srcset="https://picsum.photos/id/120/1300/720" media="(min-width:1025px)">
+                                <source srcset="https://picsum.photos/id/120/1024/640" media="(min-width:720px)">
+                                <img src="https://picsum.photos/id/120/480/480" alt="Slide 2 Image" />
+                            </picture>
+                        </div>
+                        <div class="action">
+                            <h2>Slide 2</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.Consequatur minus repellat placeat veritatis blanditiis rem?</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="image">
+                            <picture>
+                                <source srcset="https://picsum.photos/id/220/1300/720" media="(min-width:1025px)">
+                                <source srcset="https://picsum.photos/id/220/1024/640" media="(min-width:720px)">
+                                <img src="https://picsum.photos/id/220/480/480" alt="Slide 3 Image" />
+                            </picture>
+                        </div>
+                        <div class="action">
+                            <h2>Slide 3</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.Consequatur, minus repellat placeat veritatis blanditiis rem?</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="image">
+                            <picture>
+                                <source srcset="https://picsum.photos/id/10/1300/720" media="(min-width:1025px)">
+                                <source srcset="https://picsum.photos/id/10/1024/640" media="(min-width:720px)">
+                                <img src="https://picsum.photos/id/10/480/480" alt="Slide 4 Image" />
+                            </picture>
+                        </div>
+                        <div class="action">
+                            <h2>Slide 4</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, minus repellat placeat veritatis blanditiis rem?</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <form action="javasintro.html" method="get" id="contactForm">
+                    <fieldset>
+                        <div id="txtNombreDiv">
+                            <label for="txtnombre">Nombre Completo</label>
+                            <input type="text" name="txtnombre" id="txtnombre" placeholder="Nombre Completo">
+                            <div class="error-container"></div>
+                        </div>
+                        <div id="txtCorreoDiv">
+                            <label for="txtcorreo">Correo Electrónico</label>
+                            <input type="email" name="txtcorreo" id="txtcorreo" placeholder="Correo Electrónico">
+                            <div class="error-container"></div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <label for="intEdad">Edad</label>
+                        <input type="number" name="intEdad" id="intEdad" placeholder="Edad">
+                    </fieldset>
+                    <div>
+                        <button type="submit" name="btnEnviar" id="btnEnviar">Enviar -></button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+                Todos los derechos 2026 ICC UNICAH
+        </footer>
+    </body>
+</html>

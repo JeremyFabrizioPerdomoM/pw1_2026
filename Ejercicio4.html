@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Tablas en HTML
+        </title>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <h1>Tablas en HTML</h1>
+        <h2>Tabla 1: Agenda de datos personales</h2>
+        <table border="1">
+            <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>Teléfono</th>
+                <th>Dirección</th>
+                <th>País</th>
+                <th>Ciudad</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th>1</th>
+                <td>Jeremy Perdomo</td>
+                <td>jeremyp@correo.com</td>
+                <td>504-00000000</td>
+                <td>Res. El Molinón</td>
+                <td>Honduras</td>
+                <td>Tegucigalpa</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>Ronald Ortiz</td>
+                <td>ronaldo@correo.com</td>
+                <td>504-01010101</td>
+                <td>Callejón sin salida</td>
+                <td>Honduras</td>
+                <td>Comayagua</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>Barbara Motiño</td>
+                <td>barbaram@correo.com</td>
+                <td>504-00000111</td>
+                <td>Res. El Molinón</td>
+                <td>Honduras</td>
+                <td>Tegucigalpa</td>
+            </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Total registrado</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td colspan="7"></td>
+            </tr>
+            </tfoot>
+        </table>
+        <h2>Tabla 2: Registro de emisión de canciones</h2>
+        <table border="1">
+            <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nombre</th>
+                <th>Género</th>
+                <th>Autor/Grupo</th>
+                <th>Frecuencia de reproducción</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th>1</th>
+                <td>Bad</td>
+                <td rowspan="2">Pop</td>
+                <td>Michael Jackson</td>
+                <td>200,000</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>Thriller</td>
+                <td>Michael Jackson</td>
+                <td>300,000</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>Propuesta Indecente</td>
+                <td rowspan="2">Bachata</td>
+                <td>Romeo Santos</td>
+                <td>150,000</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td>Solo Conmigo</td>
+                <td>Romeo Santos</td>
+                <td>115,000</td>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td>I Will Not Break</td>
+                <td rowspan="2">Rock</td>
+                <td>Disturbed</td>
+                <td>85,000</td>
+            </tr>
+            <tr>
+                <th>6</th>
+                <td>The Sound of Silence</td>
+                <td>Disturbed</td>
+                <td>80,000</td>
+            </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Total de canciones registradas</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td colspan="5"></td>
+            </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
